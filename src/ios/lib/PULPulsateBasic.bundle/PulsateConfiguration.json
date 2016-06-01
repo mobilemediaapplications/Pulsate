@@ -1,0 +1,84 @@
+{
+    
+    "pulsate_colors_configuration": {
+        
+        "pulsate_top_nav_bar_background_color" : "",
+        "pulsate_top_nav_bar_title_color" : "",
+        "pulsate_back_button_color" : "",
+        "pulsate_divider_lines_color" : "",
+        "pulsate_send_button_color" : "",
+        "pulsate_text_hint_color" : "",
+        "pulsate_text_input_color" : "",
+        "pulsate_front_unknown" : "",
+        
+        "pulsate_date_card_background_color" : "",
+        
+        "pulsate_feed_pencil_color" : "",
+        "pulsate_feed_pencil_background_color" : "",
+        "pulsate_feed_background_color" : "",
+        
+        "pulsate_card_text_color" : "",
+        "pulsate_card_background_color" : "",
+        "pulsate_card_admin_name_text_color" : "",
+        "pulsate_card_admin_title_text_color" : "",
+        "pulsate_card_reply_button_text_color" : "",
+        "pulsate_card_right_button_text_color" : "",
+        "pulsate_card_right_button_read_text_color" : "",
+        
+        "pulsate_card_back_background_color" : "",
+        "pulsate_card_back_reply_icon_color" : "",
+        "pulsate_card_back_button_color" : "",
+        "pulsate_card_back_button_text_color" : "",
+        "pulsate_card_back_table_label_text_color" : "",
+        "pulsate_card_back_table_value_text_color" : "",
+        
+        "pulsate_thread_card_new_message_text_color" : "",
+        
+        "pulsate_thread_user_bubble_color" : "",
+        "pulsate_thread_user_bubble_text_color" : "",
+        
+        "pulsate_thread_admin_bubble_color" : "",
+        "pulsate_thread_admin_bubble_text_color" : "",
+        
+        "pulsate_thread_bubble_date_color" : "",
+        
+        "pulsate_thread_background_color" : "",
+        "pulsate_thread_middle_hint_color" : "",
+        "pulsate_thread_select_subject_text_color" : "",
+        "pulsate_thread_select_subject_icon_color" : "",
+        "pulsate_thread_select_subject_dropdown_background_color" : "",
+        "pulsate_thread_other_subject_box_background" : "",
+        "pulsate_thread_other_subject_box_border" : "",
+        "pulsate_thread_message_background_color" : "",
+        "pulsate_thread_navbar_admin_title_color" : "",
+        "pulsate_thread_sending_message_background_color" : "",
+        "pulsate_thread_sending_message_text_color" : "",
+        
+        "pulsate_small_in_app_message_background_color" : "",
+        
+        "pulsate_big_in_app_header_color" : "",
+        "pulsate_big_in_app_message_background_color" : "",
+        "pulsate_big_in_app_message_button_background_color" : "",
+        "pulsate_big_in_app_message_button_background_text_color" : "",
+        
+        "pulsate_card_delete_icon_color" : "",
+        "pulsate_card_delete_icon_background_color" : "",
+        
+        "pulsate_card_create_icon_color" : "",
+        "pulsate_card_create_icon_background_color" : "",
+        
+        "pulsate_feed_is_empty_title_color" : "",
+        "pusate_feed_is_empty_text_color" : "",
+        "pulsate_feed_is_empty_icon_background_color" : "",
+        "pulsate_feed_is_empty_icon_color" : "",
+        
+        "pulsate_new_updates_pill_background_color" : "",
+        "pulsate_new_updates_pill_text_color" : "",
+        "pulsate_new_updates_pill_arrow_color" : "",
+        
+        "pulsate_no_internet_connection_background_color" : "",
+        "pulsate_no_internet_connection_text_color" : "",
+        "pulsate_no_internet_connection_cross_color" : ""
+        
+    }
+}

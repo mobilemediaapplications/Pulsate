@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-pulsateIO" version="0.0.1">
+   <name>PulsateIO</name>
+   <js-module name="PulsateIO" src="www/PulsateIO.js">
+      <clobbers target="cordova.plugins.PulsateIO" />
+   </js-module>
+   <platform name="android">
+      <!--<resource-file src="./src/android/lib/PulsateSdk-2.7.0.aar" target="libs/PulsateSdk-2.7.0.aar" />-->
+      <framework src="./src/android/pulsate.gradle" custom="true" type="gradleReference" />
+      <config-file parent="/*" target="res/xml/config.xml">
+         <feature name="PulsateIO">
+            <param name="android-package" value="cordova.plugin.pulsateIO.PulsateIO" />
+         </feature>
+      </config-file>
+
+      <config-file target="AndroidManifest.xml" parent="/*">
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.permission.BLUETOOTH" />
+        <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+        <uses-permission android:name="android.permission.READ_LOGS" />
+
+        <!-- change com.example.demo to your app package name -->
+        <uses-permission android:name="cordova.plugin.pulsateIO.permission.C2D_MESSAGE" />
+
+        <!-- change com.example.demo to your app package name -->
+        <permission android:name="cordova.plugin.pulsateIO.permission.C2D_MESSAGE"
+                        android:protectionLevel="signature" />
+      </config-file>
+
+
+
+      <config-file parent="/*" target="AndroidManifest.xml" />
+      <source-file src="src/android/PulsateIO.java" target-dir="src/cordova-plugin-pulsateIO/PulsateIO" />
+      <source-file src="src/android/MainApplication.java" target-dir="src/cordova-plugin-pulsateIO/MainApplication" />
+
+      <hook type="after_plugin_add" src="src/android/scripts/androidMainApplication.js" />
+      <hook type="after_plugin_add" src="src/android/scripts/androidCordovaLibUpdate.js" />
+
+
+      <variable name="AndroidLaunchMode" default="singleTop"/>
+      <variable name="android-minSdkVersion" default="14" />
+      <variable name="android-targetSdkVersion" default="23" />
+
+   </platform>
+   <platform name="ios">
+      <config-file parent="/*" target="config.xml">
+         <feature name="PulsateIO">
+            <param name="ios-package" value="PulsateIO" />
+            <param name="onload" value="true" />
+         </feature>
+      </config-file>
+      <source-file src="src/ios/PulsateIO.m" />
+      <resource-file src="./src/ios/lib/PULPulsateBasic.bundle" />
+      <framework src="./src/ios/lib/PULPulsate.framework" custom="true" />
+   </platform>
+</plugin>

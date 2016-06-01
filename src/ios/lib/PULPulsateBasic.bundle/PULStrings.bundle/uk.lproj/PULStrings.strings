@@ -1,0 +1,168 @@
+/*
+ RULES:
+ Assume value for (seconds, hours, minutes, days, weeks, months or years) is XXXY, Y is last digit, XY is last two digits;
+ */
+
+/* Y == 0 OR Y > 4 OR (XY > 10 AND XY < 15); */
+"%d days ago" = "%d днів тому";
+
+/* Y > 1 AND Y < 5 AND (XY < 10 OR XY > 20); */
+"%d _days ago" = "%d дня тому";
+
+/* Y == 1 AND XY != 11; */
+"%d __days ago" = "%d день тому";
+
+
+/* Y == 0 OR Y > 4 OR (XY > 10 AND XY < 15); */
+"%d hours ago" = "%d годин тому";
+
+/* Y > 1 AND Y < 5 AND (XY < 10 OR XY > 20); */
+"%d _hours ago" = "%d години тому";
+
+/* Y == 1 AND XY != 11; */
+"%d __hours ago" = "%d годину тому";
+
+
+/* Y == 0 OR Y > 4 OR (XY > 10 AND XY < 15); */
+"%d minutes ago" = "%d хвилин тому";
+
+/* Y > 1 AND Y < 5 AND (XY < 10 OR XY > 20); */
+"%d _minutes ago" = "%d хвилини тому";
+
+/* Y == 1 AND XY != 11; */
+"%d __minutes ago" = "%d хвилину тому";
+
+
+/* Y == 0 OR Y > 4 OR (XY > 10 AND XY < 15); */
+"%d months ago" = "%d місяців тому";
+
+/* Y > 1 AND Y < 5 AND (XY < 10 OR XY > 20); */
+"%d _months ago" = "%d місяця тому";
+
+/* Y == 1 AND XY != 11; */
+"%d __months ago" = "%d місяць тому";
+
+
+/* Y == 0 OR Y > 4 OR (XY > 10 AND XY < 15); */
+"%d seconds ago" = "%d секунд тому";
+
+/* Y > 1 AND Y < 5 AND (XY < 10 OR XY > 20); */
+"%d _seconds ago" = "%d секунди тому";
+
+/* Y == 1 AND XY != 11; */
+"%d __seconds ago" = "%d секунду тому";
+
+
+/* Y == 0 OR Y > 4 OR (XY > 10 AND XY < 15); */
+"%d weeks ago" = "%d тижднів тому";
+
+/* Y > 1 AND Y < 5 AND (XY < 10 OR XY > 20); */
+"%d _weeks ago" = "%d тиждні тому";
+
+/* Y == 1 AND XY != 11; */
+"%d __weeks ago" = "%d тиждень тому";
+
+
+/* Y == 0 OR Y > 4 OR (XY > 10 AND XY < 15); */
+"%d years ago" = "%d років тому";
+
+/* Y > 1 AND Y < 5 AND (XY < 10 OR XY > 20); */
+"%d _years ago" = "%d роки тому";
+
+/* Y == 1 AND XY != 11; */
+"%d __years ago" = "%d рік тому";
+
+
+/* No comment provided by engineer. */
+"A minute ago" = "Хвилину тому";
+
+/* No comment provided by engineer. */
+"An hour ago" = "Годину тому";
+
+/* No comment provided by engineer. */
+"Just now" = "Щойно";
+
+/* No comment provided by engineer. */
+"Last month" = "Місяць тому";
+
+/* No comment provided by engineer. */
+"Last week" = "Тиждень тому";
+
+/* No comment provided by engineer. */
+"Last year" = "Рік тому";
+
+/* No comment provided by engineer. */
+"Yesterday" = "Вчора";
+
+/* No comment provided by engineer. */
+"1 year ago" = "1 рік тому";
+
+/* No comment provided by engineer. */
+"1 month ago" = "1 місяць тому";
+
+/* No comment provided by engineer. */
+"1 week ago" = "1 тиждень тому";
+
+/* No comment provided by engineer. */
+"1 day ago" = "1 день тому";
+
+/* No comment provided by engineer. */
+"This morning" = "Цього ранку";
+
+/* No comment provided by engineer. */
+"This afternoon" = "Сьогодні вдень";
+
+/* No comment provided by engineer. */
+"Today" = "Сьогодні";
+
+/* No comment provided by engineer. */
+"This week" = "Цього тиждня";
+
+/* No comment provided by engineer. */
+"This month" = "Цього місяця";
+
+/* No comment provided by engineer. */
+"This year" = "Цього року";
+
+"reply_button_label" = "Reply";
+"new_message_button_label" = "New Message";
+"new_messages_button_label" = "New Messages";
+"new_updates" = "New Updates";
+"no_internet_connection" = "No Internet Connection";
+"no_internet_server_error" = "No Connection. Please try again";
+"view_conversation_button_label" = "View Conversation";
+"select_subject_label"= "Please select a subject";
+"write_a_message_hint"= "Write a message...";
+"give_your_message_a_subject" = "Give your message a subject so\nit's easier to organize.";
+"sent_a_message" = "sent a message";
+"replied_to_your" = "replied to your message";
+"send_button" = "SEND";
+
+"new_card_label" = "New Card";
+"feed_title_label"= "Feed";
+"new_message_title_label"= "New Message";
+
+"subject_feedback_label"= "Feedback";
+"subject_feature_suggestion_label"= "Feature Suggestion";
+"subject_complaint_label"= "Complaint";
+"subject_other_label"= "Other...";
+
+"feed_is_empty_title"= "Your Feed is Empty";
+"icon_left_text"= "Tap the";
+"icon_right_text"= "icon to start a";
+"icon_bottom_text"= "new conversation with us.";
+"second_paragraph_text"= "You can use this section to \n ask questions or send feedback";
+
+"message_sending" = "Message Sending...";
+"message_sent" = "Message Sent";
+"message_failed" = "No Internet Connection";
+"try_again" = "Try Again?";
+
+// 2.4.2
+
+"other_subject_hint" = "Please describe your message";
+"reached_bottom_of_feed" = "You have reached the bottom of your feed.";
+
+// 2.4.5
+
+"pulsate_YOU_in_message_card" = "You";

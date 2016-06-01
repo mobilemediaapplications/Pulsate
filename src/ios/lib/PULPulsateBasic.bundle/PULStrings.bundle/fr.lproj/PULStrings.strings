@@ -1,0 +1,115 @@
+/* No comment provided by engineer. */
+"%d days ago" = "Il y a %d jours";
+
+/* No comment provided by engineer. */
+"%d hours ago" = "Il y a %d heures";
+
+/* No comment provided by engineer. */
+"%d minutes ago" = "Il y a %d minutes";
+
+/* No comment provided by engineer. */
+"%d months ago" = "Il y a %d mois";
+
+/* No comment provided by engineer. */
+"%d seconds ago" = "Il y a %d secondes";
+
+/* No comment provided by engineer. */
+"%d weeks ago" = "Il y a %d semaines";
+
+/* No comment provided by engineer. */
+"%d years ago" = "Il y a %d ans";
+
+/* No comment provided by engineer. */
+"A minute ago" = "Il y a une minute";
+
+/* No comment provided by engineer. */
+"An hour ago" = "Il y a une heure";
+
+/* No comment provided by engineer. */
+"Just now" = "A l'instant";
+
+/* No comment provided by engineer. */
+"Last month" = "Le mois dernier";
+
+/* No comment provided by engineer. */
+"Last week" = "La semaine dernière";
+
+/* No comment provided by engineer. */
+"Last year" = "L'année dernière";
+
+/* No comment provided by engineer. */
+"Yesterday" = "Hier";
+
+/* No comment provided by engineer. */
+"1 year ago" = "Il y a 1 an";
+
+/* No comment provided by engineer. */
+"1 month ago" = "Il y a 1 mois";
+
+/* No comment provided by engineer. */
+"1 week ago" = "Il y a 1 semaine";
+
+/* No comment provided by engineer. */
+"1 day ago" = "Il y a 1 jour";
+
+/* No comment provided by engineer. */
+"This morning" = "Ce matin";
+
+/* No comment provided by engineer. */
+"This afternoon" = "Cet après-midi";
+
+/* No comment provided by engineer. */
+"Today" = "Aujourd'hui";
+
+/* No comment provided by engineer. */
+"This week" = "Cette semaine";
+
+/* No comment provided by engineer. */
+"This month" = "Ce mois-ci";
+
+/* No comment provided by engineer. */
+"This year" = "Cette année";
+
+"reply_button_label" = "Reply";
+"new_message_button_label" = "New Message";
+"new_messages_button_label" = "New Messages";
+"new_updates" = "New Updates";
+"no_internet_connection" = "No Internet Connection";
+"no_internet_server_error" = "No Connection. Please try again";
+"view_conversation_button_label" = "View Conversation";
+"select_subject_label"= "Please select a subject";
+"write_a_message_hint"= "Write a message...";
+"give_your_message_a_subject" = "Give your message a subject so\nit's easier to organize.";
+"sent_a_message" = "sent a message";
+"replied_to_your" = "replied to your message";
+"send_button" = "SEND";
+
+"new_card_label" = "New Card";
+"feed_title_label"= "Feed";
+"new_message_title_label"= "New Message";
+
+"subject_feedback_label"= "Feedback";
+"subject_feature_suggestion_label"= "Feature Suggestion";
+"subject_complaint_label"= "Complaint";
+"subject_other_label"= "Other...";
+
+"feed_is_empty_title"= "Your Feed is Empty";
+"icon_left_text"= "Tap the";
+"icon_right_text"= "icon to start a";
+"icon_bottom_text"= "new conversation with us.";
+"second_paragraph_text"= "You can use this section to \n ask questions or send feedback";
+
+"message_sending" = "Message Sending...";
+"message_sent" = "Message Sent";
+"message_failed" = "No Internet Connection";
+"try_again" = "Try Again?";
+
+// 2.4.2
+
+"other_subject_hint" = "Please describe your message";
+"reached_bottom_of_feed" = "You have reached the bottom of your feed.";
+
+// 2.4.5
+
+"pulsate_YOU_in_message_card" = "You";
+
