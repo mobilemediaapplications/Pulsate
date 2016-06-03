@@ -28,7 +28,8 @@ window.cordova.plugins.PulsateIO.init({
 - **appID**: this is provided by Pulsate.
 - **appKey**: this is provided by Pulsate.
 - **GCM_ID**: This the Google Messaging APP ID, [How to find GCM ID](http://dev.tapjoy.com/faq/how-to-find-sender-id-and-api-key-for-gcm/).
-- 
+
+
 
 ### 2. Show the Pulsate Feed 
 
