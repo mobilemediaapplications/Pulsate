@@ -96,15 +96,11 @@
     }
 
 
-
-    PULPulsateManager* pulsateManager = [PULPulsateFactory getDefaultInstance];
-
-    [pulsateManager startPulsateSession];
-
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
 
 
     UIView *pulspv = (UIView*)[appDelegate.window.rootViewController.view viewWithTag:1200];
+    [pulspv removeFromSuperview];
     pulspv.hidden = true;
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 
