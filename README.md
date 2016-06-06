@@ -7,7 +7,7 @@ The Cordova Pulsate Plugin provides ability to display pulsate feed within a Cor
 to install the plugin, run this command
 
 ```sh
-$ cordova plugin add https://bitbucket.org/rhilali/cordova-pulsate-plugin/
+$ cordova plugin add https://github.com/mobilemediaapplications/Pulsate.git
 ```
 
 Please note that you need to add the `android` and `ios` platforms to your ionic project before adding the plugin.
