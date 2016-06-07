@@ -86,7 +86,10 @@ public class PulsateIO extends CordovaPlugin {
         pp.currentActivity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                pp.currentActivity.finish();
+                String view = pp.currentActivity.getClass().getName();
+                if(view.contains("com.pulsatehq")){
+                    pp.currentActivity.finish();
+                }
             }
         });
 
