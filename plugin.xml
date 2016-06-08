@@ -42,6 +42,9 @@
       <hook type="after_plugin_add" src="src/android/scripts/androidMainApplication.js" />
       <hook type="after_plugin_add" src="src/android/scripts/androidCordovaLibUpdate.js" />
 
+      <hook type="after_platform_add" src="src/android/scripts/androidMainApplication.js" />
+      <hook type="after_platform_add" src="src/android/scripts/androidCordovaLibUpdate.js" />
+
 
       <variable name="AndroidLaunchMode" default="singleTop"/>
       <variable name="android-minSdkVersion" default="14" />

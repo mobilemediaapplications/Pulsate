@@ -37,7 +37,7 @@ module.exports = function(context) {
         throw new Error('Unable to find project.properties: ' + err);
       }
 
-      var result = data.replace(/target=android-22/g, 'target=android-23');
+      var result = data.replace(/target=android-(.*)/g, 'target=android-23');
 
       fs.writeFile(propertiesFile, result, 'utf8', function (err) {
         if (err) throw new Error('Unable to write into project.properties: ' + err);
@@ -53,10 +53,29 @@ module.exports = function(context) {
         throw new Error('Unable to find gradle.properties: ' + err);
       }
 
-      var result = data.replace(/classpath '.*'/g, "classpath 'com.android.tools.build:gradle:1.3.1'")
+      var result = data;
+      //Gradle Version
+      if(result.indexOf("classpath 'com.android.tools.build:gradle:1.3.1'") ==-1){
+          result = result.replace(/classpath '.*'/g, "classpath 'com.android.tools.build:gradle:1.3.1'");
+      }
+      //Use Library
+      if(result.indexOf('useLibrary "org.apache.http.legacy"') ==-1){
+          result = result.replace("publishNonDefault true", 'publishNonDefault true\n\tuseLibrary "org.apache.http.legacy"');
+      }
+      //inject libs
+      if(result.indexOf("compile 'com.pulsatehq.sdk:PulsateSdk:2.7.0'") ==-1){
+        var libsDep = "compile fileTree(dir: 'libs', include: '*.jar')\n\tcompile 'com.google.android.gms:play-services-gcm:8.4.0'\n\tcompile 'com.android.support:cardview-v7:23.3.0'\n\tcompile 'com.android.support:appcompat-v7:23.3.0'\n\tcompile 'com.pulsatehq.sdk:PulsateSdk:2.7.0'"
+        result = result.replace("compile fileTree(dir: 'libs', include: '*.jar')", libsDep);
+      }
+
+      //jcenter
+      if(result.indexOf("jcenter") ==-1){
+        result = result.replace(/mavenCentral/g, "jcenter");
+      }
+
 
       fs.writeFile(gradleFile, result, 'utf8', function (err) {
-        if (err) throw new Error('Unable to write into gradle.properties: ' + err);
+        if (err) throw new Error('Unable to write into Gradle.File: ' + err);
       })
 
     });
