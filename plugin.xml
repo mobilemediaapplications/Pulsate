@@ -52,6 +52,11 @@
 
    </platform>
    <platform name="ios">
+      <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+        
+          <key>NSLocationAlwaysUsageDescription</key>
+          <string></string>
+      </config-file>
       <config-file parent="/*" target="config.xml">
          <feature name="PulsateIO">
             <param name="ios-package" value="PulsateIO" />
