@@ -60,7 +60,7 @@ module.exports = function(context) {
       }
       //Use Library
       if(result.indexOf('useLibrary "org.apache.http.legacy"') ==-1){
-          result = result.replace("publishNonDefault true", 'publishNonDefault true\n\tuseLibrary "org.apache.http.legacy"');
+          result = result.replace("android {", 'android {\n\tuseLibrary "org.apache.http.legacy"');
       }
       //inject libs
       if(result.indexOf("compile 'com.pulsatehq.sdk:PulsateSdk:2.7.0'") ==-1){
