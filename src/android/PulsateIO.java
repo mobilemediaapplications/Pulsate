@@ -54,6 +54,8 @@ public class PulsateIO extends CordovaPlugin {
         IPulsateManager manager = ((cordova.plugin.pulsateIO.MainApplication) this.cordova.getActivity().getApplication()).getPulsate();
         manager.setAuthorizationData(authData);
 
+        manager.startPulsateSession();
+
         if (message != null && message.length() > 0) {
             callbackContext.success(message);
         } else {
