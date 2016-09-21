@@ -8,8 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol PULPulsateManagerDelegate <NSObject>
-
+@protocol PULPulsateManagerDelegate  <NSObject>
+@required
+-(void)onUnauthorizedAction;
 -(void)onPulsateEerror:(NSError*)error;
+@end
+
+@interface PULPulsateManagerDelegate : NSObject
+
+-(void)unauthorizedAction:(NSString*)action;
+
+@property (nonatomic, weak) id  <PULPulsateManagerDelegate> delegatePasser;
 
 @end

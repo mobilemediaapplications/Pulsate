@@ -1,6 +1,6 @@
 //
 //  PULPulsateManager.h
-//  PULPulsate 2.5.0
+//  PULPulsate 2.8.5
 //
 //  Created by Michal on 04/12/2014.
 //  Copyright (c) 2014 Pulsatehq. All rights reserved.
@@ -207,4 +207,32 @@ typedef NS_ENUM(NSUInteger, PULPrivacyLevel){
  */
 -(void)sendLocationWithBeaconEvents:(BOOL)sendLocation;
 
+/**
+ * 
+ *
+ */
+-(BOOL)isUserAuthorized;
+
+/**
+ *  Set if user is authorized or not. The default is YES.
+ *
+ */
+-(void)setUserAuthorized:(BOOL)authorized;
+
+/**
+ *  Set Pulsate Manager Delegate. Returns callbacks for: onUnauthorizedAction
+ *
+ */
+-(void)setPulsateManagerDelegate:(nonnull PULPulsateManagerDelegate*)pulsateManagerDelegate;
+
+/**
+ *  Gets the Pulsate Manager Delegate
+ */
+-(nullable PULPulsateManagerDelegate*)getPulsateManagerDelegate;
+
+/**
+ *  Shows the last blocked message or card. User must be authorized.
+ *
+ */
+-(void)showLastUnauthorizedMessage;
 @end
